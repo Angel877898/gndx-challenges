@@ -1,0 +1,23 @@
+.card{
+    margin-left:10px ;
+    width: 12vw;
+    height: 24vh;
+    background-color: #1d223a;
+    box-shadow: 2px 2px 1px 1px #0e102e;
+}
+.card-date {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+}
+.card-image{
+    width: 58%;
+    height: 62%;
+    margin-left: 25px;
+}
+.card-temp{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2px;
+    font-size: 18px;
+}

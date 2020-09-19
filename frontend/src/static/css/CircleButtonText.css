@@ -1,0 +1,21 @@
+.circle-buttonText{
+    width: 40px;
+    height: 40px;
+    margin-top: 30px;
+    margin-right: 20px;
+    border-radius: 50%;
+    color: white;
+    background-color: #6d7079;
+}
+.circle-buttonText p{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+.circle-buttonText:hover p{
+    color: black;
+}
+.circle-buttonText:hover{
+    background-color: white;
+    
+}

@@ -1,0 +1,10 @@
+.footer{
+    margin-top: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer p{
+    opacity: 0.4;
+    font-weight: bold;
+}

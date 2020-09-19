@@ -1,0 +1,23 @@
+.bigRectangle{
+    background-color:  #1d223a;
+    overflow: hidden;
+    text-align: center;
+    padding: 1em 0;
+    margin-left: 8vw;
+    margin-top: 4vh;
+    position: relative;
+    max-height: 178px;
+    width: 34.5%;
+    box-shadow: 2px 2px 1px 1px #0e102e;
+}
+.bigRectangle-title{
+    font-weight: 500;
+}
+.bigRectangle-value{
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 2vh;
+}
+.bigRectangle-asset{
+    margin-top: 3vh;
+}
