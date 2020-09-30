@@ -1,5 +1,24 @@
-.list{
+.days {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+@media screen and (min-width: 480px) {
+    .days {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
+    .days{
+        margin-left:0rem ;
+        
+    }
+    
 }

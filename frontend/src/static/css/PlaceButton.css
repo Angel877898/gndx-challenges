@@ -1,0 +1,24 @@
+.placeButton {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.placeButton-button{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    height: 100%;
+    align-items: center;
+    background-color: var(--azulito);
+    border: none;
+}
+.placeButton-button:hover {
+    border: 1px solid gray;
+    cursor: pointer;
+}
+.placeButton-button span{
+    margin-left: 1rem;
+}

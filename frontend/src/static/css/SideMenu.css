@@ -1,0 +1,38 @@
+.sideMenu {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--azulito);
+    position: fixed;
+    z-index: 200;
+    
+}
+.closeDiv {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3vw;
+    margin-top: .4rem;
+}
+.closeIcon:hover {
+    cursor: pointer;
+}
+.closeIcon:active {
+    border: 1px solid rgb(241, 231, 231);
+}
+.sideMenu.close{
+    left: 100%;
+}
+.listPlaces {
+    height: 100%;
+}
+@keyframes slide-open {
+    100% {left: 0}
+}
+
+@media screen and (min-width: 1200px) {
+    
+    .sideMenu {
+        width: 28vw;
+        
+    }
+    
+}

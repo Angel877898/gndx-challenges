@@ -1,0 +1,48 @@
+.weather {
+    background-color: var(--azulito);
+    height: 85rem;
+    
+}
+.weather-images {
+    display: flex;
+    overflow: hidden;
+    height: 35rem;
+    max-height: 36rem;
+    align-items: center;
+    justify-content: center;
+}
+.weather-images-background{
+    position: relative;
+    width: 50rem;
+    opacity: 10%;
+}
+.weather-images-logo {
+    position: absolute;
+    align-self: center;
+}
+.weather-info { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.weather-info-degrees{
+    font-size: 10rem;
+}
+.weather-info-degrees span{
+    font-size: 6.5rem;
+    opacity: 40%;
+}
+.weather-info-type {
+    font-size: 4.5rem;
+    opacity: 60%;
+}
+.weather-info-date {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    opacity: 50%;
+}
+.weather-info-location {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    opacity: 55%;
+}

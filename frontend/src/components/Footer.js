@@ -2,10 +2,10 @@ import React  from "react";
 import "../static/css/Footer.css";
 
 
-export default function Header({imagen}) {
+export default function Footer({}) {
     return (
-        <div className="footer">
-            <p>&copy; Angel Hernandez | gndx-challenges 2020 </p>
-        </div>
+        <footer className="footer">
+            <span>Angel Hernandez Dev &copy;2020 gndx challenges</span>
+        </footer>
     )
 }

@@ -14,13 +14,13 @@ import DayCard from "./DayCard"
 
 export default function ListOfCards() {
     return (
-        <div className="list">
+        <section className="days">
             <DayCard imagen={Snow} />
             <DayCard imagen={Sleet} />
             <DayCard imagen={LightRain} />
             <DayCard imagen={LightCloud} />
             <DayCard imagen={Clear} />
             
-        </div>
+        </section>
     )
 }

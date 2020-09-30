@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+html {
+    font-size: 62.5%;
+}
+:root {
+    --background: #110d1c;
+    --azulito:#1d223a;
+    --gris:#62636f;
+}
+#app{
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+     
+}
+.separator2{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background);
+}
+.search-location{
+    background-color: var(--azulito);
+    display: flex;
+    justify-content: space-between;
+    height: 6.2rem;
+    min-height: 6.2rem;
+}
+.search {
+    width: 13rem;
+    height: 3.5rem;
+    margin-top: 1.9rem;
+    margin-left: 1.5rem;
+    background-color: var(--gris);
+    border-radius: .5rem;
+}
+.search:hover{
+    border: 1px solid white;
+}
+.location {
+    width: 3.5rem;
+    height: 3.5rem;
+    overflow: hidden;
+    margin-top: 1.9rem;
+    margin-right: 1.5rem;
+    background-color: var(--gris);
+    border-radius: 1.8rem;
+}
+.location:hover{
+    border: 1px solid white;
+}
+.location img{
+    width: 3.1rem;
+    height: 3.1rem;
+}
+.app {
+    width: 100%;
+    background-color: var(--background);
+}
+.weather {
+    background-color: var(--azulito);
+    height: 85rem;
+    
+}
+.weather-images {
+    display: flex;
+    overflow: hidden;
+    height: 35rem;
+    max-height: 36rem;
+    align-items: center;
+    justify-content: center;
+}
+.weather-images-background{
+    position: relative;
+    width: 50rem;
+    opacity: 10%;
+}
+.weather-images-logo {
+    position: absolute;
+    align-self: center;
+}
+.weather-info { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.weather-info-degrees{
+    font-size: 10rem;
+}
+.weather-info-degrees span{
+    font-size: 6.5rem;
+    opacity: 40%;
+}
+.weather-info-type {
+    font-size: 4.5rem;
+    opacity: 60%;
+}
+.weather-info-date {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    opacity: 50%;
+}
+.weather-info-location {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    opacity: 55%;
+}
+.days {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+.days-card {
+    background-color: var(--azulito);
+    border-radius: 1rem;
+    width: 22rem;
+    height: 28rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.days-card-title {
+    display: block;
+    font-size: 1.8rem;
+    margin-top: 1.3rem;
+}
+.days-card-logo {
+    display: block;
+    height: 20rem;
+}
+.days-card-logo img{
+    width: 15rem;
+    margin-bottom: 3rem;
+    margin-right:2rem ;
+}
+.days-card-max {
+    display: inline-block;
+    font-size: 1.8rem;
+    margin-top: .5rem;
+    margin-right: 2rem;
+}
+.days-card-min {
+    font-size: 1.8rem;
+}
+.highlights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.highlights-title {
+    display: block;
+    font-size: 2.2rem;
+    margin-bottom: 4rem;
+    margin-left: 3rem;
+}
+.highlights-bigCard {
+    overflow: hidden;
+    background-color: var(--azulito);
+    width: 28rem;
+    height: 20rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.highlights-bigCard-title {
+    font-size: 1.9rem;
+    margin-top: 1.5rem;
+}
+.highlights-bigCard-content {
+    font-size: 5rem;
+    margin-top: 4rem;
+    font-weight: 600;
+}
+.highlights-bigCard-footer {
+    font-size: 1.5rem;
+    margin-top: 3.5rem;
+}
+.highlights-card {
+    overflow: hidden;
+    background-color: var(--azulito);
+    width: 28rem;
+    height: 15rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.highlights-card-title {
+    font-size: 1.9rem;
+    margin-top: 1.5rem;
+}
+.highlights-card-content {
+    font-size: 5rem;
+    margin-top: 4rem;
+    font-weight: 600;
+}
+.footer {
+    width: 100vw;
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.footer span{
+    font-family: 1.4rem;
+    opacity: 50%;
+}
+.places span {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 6.5rem;
+    font-size: 2rem;
+    padding-left: 4rem;
+    border: 0.2px solid white;
+}
+@media screen and (min-width: 480px) {
+    .days {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    .days-card {
+        margin: 1rem;
+    }
+}
+@media screen and (min-width: 720px) {
+    .highlights {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .highlights-bigCard{
+        margin:2rem;
+    }
+    .highlights-card{
+        margin:2rem;
+    }
+    .big{
+        display: flex;
+    }
+    .small{
+        display: flex;
+    }
+}
+@media screen and (min-width: 1200px) {
+    body{
+        background-color: var(--background);
+        display: flex;
+    }
+    #app{
+        flex-direction: row;
+    }
+    .separator1{
+        width: 28vw;
+        height: 100vh;
+        background-color: var(--azulito);
+    }
+    .separator2{
+        height: 100vh;
+        width: 100%;
+    }
+    .days{
+        margin-left:0rem ;
+        
+    }
+    .days-card {
+        width: 15rem;
+        height: 22rem;
+    }
+    .days-card-title {
+        font-size: 1.7rem;
+        margin-top: .5rem;
+    }
+    .days-card-logo {
+        height: 16rem;
+    }
+    .days-card-logo img{
+        width: 12rem;
+        margin-bottom: 3rem;
+        margin-right:2rem ;
+    }
+    .days-card-max {
+        display: inline-block;
+        font-size: 1.8rem;
+        margin-top: .5rem;
+        margin-right: 2rem;
+    }
+    .days-card-min {
+        font-size: 1.8rem;
+    }
+    .big {
+        display: flex;
+        flex-direction: row;
+    }
+    .small {
+        display: flex;
+        flex-direction: row;
+    }
+    .highlights {
+        justify-content: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .highlights-title {
+        margin-left: 8%;
+    }
+    .footer{
+        align-self: center;
+        width: 62vw;
+        margin-top: 2rem;
+    }
+    
+}

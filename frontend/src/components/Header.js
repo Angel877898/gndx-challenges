@@ -1,14 +1,13 @@
 import React  from "react";
 import "../static/css/Header.css";
-import CircleButtonText from "./CircleButtonText"
-import FarenW from "../static/images/farenheitW.png"
-import CelsiusW from "../static/images/celsiusW.png"
+import Brujula from "../static/images/brujula.png"
 
-export default function Header({imagen}) {
+export default function Header(props) {
+    
     return (
-        <div className="header">
-            <CircleButtonText texto="°C" />
-            <CircleButtonText texto="°F" />
-        </div>
+        <header className="search-location">
+            <button className="search" onClick={props.click} >Search for places</button>
+            <button className="location"><img src={Brujula} alt="location image" /></button>
+        </header>
     )
 }
